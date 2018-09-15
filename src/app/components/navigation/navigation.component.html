@@ -1,0 +1,66 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="wrapper">
+  <!-- Sidebar -->
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <h4>Construction Mnagment</h4>
+    </div>
+
+    <ul class="list-unstyled components">
+      <!--           <p>Dummy Heading</p>
+ -->
+      <li class="active">
+        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Project</a>
+        <ul class="collapse list-unstyled" id="homeSubmenu">
+          <li>
+            <a [routerLink]='["/new"]'>New Project</a>
+          </li>
+          <li>
+            <a href="#">Bid Managment</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#contractSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Contract</a>
+        <ul class="collapse list-unstyled" id="contractSubmenu">
+          <li>
+            <a [routerLink]='["/contract/new-contract"]'>New contract</a>
+          </li>
+          <li>
+            <a href="#">Update contract</a>
+          </li>
+          <li>
+            <a [routerLink]='["/create-variation-status"]'>Variation</a>
+          </li>
+          <li>
+            <a href="#">Claim</a>
+          </li>
+        </ul>
+      </li>
+
+
+
+      <li>
+        <a href="#">Contact</a>
+      </li>
+      <li>
+        <a href="#">Reminder</a>
+      </li>
+      <li>
+        <a href="#">To Do List</a>
+      </li>
+
+    </ul>
+
+  </nav>
+  <div id="content">
+    <ng-content>
+
+    </ng-content>
+  </div>
+
+</div>
